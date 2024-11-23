@@ -11,3 +11,6 @@ jobs:
   s3-ls:
     uses: patricktalmeida/github-actions-reusable-workflows/.github/workflows/s3-command.yaml@v1
     secrets: inherit
+    permissions:
+      id-token: write
+      contents: read
