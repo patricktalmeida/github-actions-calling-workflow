@@ -1,0 +1,13 @@
+name: "s3-ls"
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+
+jobs:
+  s3-ls:
+    uses: patricktalmeida/github-actions-reusable-workflows/.github/workflows/s3-command.yaml@v1
+    secrets: inherit
